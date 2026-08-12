@@ -447,12 +447,12 @@ facturation directement chez le fournisseur.
 
 ## État des itérations
 
+- ✅ Itération 0: Planification, analyses de solutions et analyse des exigences
 - ✅ Itération 1 : intégration GitHub et gestion des webhooks
 - ✅ Itération 2 : intégration Groq et modes d'application des labels
-- ✅ Amélioration de la sélection et du scoring des fichiers
-- ✅ Configuration multi-fournisseurs par installation
-- 🚧 Évaluation à grande échelle sur un corpus de Pull Requests
-- ⏳ Finalisation, documentation et rapport
+- ✅ Itération 3: Distinction entre labels générés par LLM et labels ajoutés manuellement
+- ✅ Itération 4: Configuration multi-fournisseurs par installation + système de scoring
+- ✅ Itération 5: Évaluation à grande échelle sur un corpus de Pull Requests, finalisation du backend et de la documentation
 
 ## Documentation
 
