@@ -461,6 +461,8 @@ facturation directement chez le fournisseur.
 - [Évaluation de la sélection des fichiers](docs/file-selection-evaluation.md)
 - [Architecture](docs/architecture-v1.md)
 - [Taxonomie des labels](docs/labels-taxonomy-v1.md)
+- [Guide utilisateur](guides/guide-utilisateur.pdf)
+- [Guide programmeur](guides/guide-programmeur.pdf)
 
 ## Licence
 
