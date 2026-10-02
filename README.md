@@ -361,7 +361,7 @@ que par ses quatre derniers caractères.
 6. Pousser un nouveau commit et confirmer que le commentaire existant est mis
    à jour au lieu d'être dupliqué.
 
-Les nouveaux commits sur une PR actualisent le commentaire d'analyse existant. La fonctionnalité Issues du dépôt doit être activée pour autoriser la publication du commentaire.
+Les nouveaux commits sur une PR mettent à jour le commentaire existant grâce à son marqueur, sans le dupliquer. La fonctionnalité Issues du dépôt doit être activée pour autoriser la publication du commentaire.
 
 En mode `suggest`, aucun label n'est appliqué automatiquement.
 
