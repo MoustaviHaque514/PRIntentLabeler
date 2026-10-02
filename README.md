@@ -361,7 +361,7 @@ que par ses quatre derniers caractères.
 6. Pousser un nouveau commit et confirmer que le commentaire existant est mis
    à jour au lieu d'être dupliqué.
 
-Chaque nouveau commit sur la PR met à jour le commentaire d'analyse existant.
+Les nouveaux commits sur une PR actualisent le commentaire d'analyse publié par l'application.
 
 En mode `suggest`, aucun label n'est appliqué automatiquement.
 
