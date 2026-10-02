@@ -361,6 +361,8 @@ que par ses quatre derniers caractères.
 6. Pousser un nouveau commit et confirmer que le commentaire existant est mis
    à jour au lieu d'être dupliqué.
 
+Chaque nouveau commit sur la PR met à jour le commentaire d'analyse existant.
+
 En mode `suggest`, aucun label n'est appliqué automatiquement.
 
 ## Validation avant une Pull Request
