@@ -16,7 +16,9 @@ Lorsqu'une Pull Request est ouverte, modifiée ou synchronisée, l'application :
 4. analyse la PR avec le fournisseur LLM configuré pour l'installation;
 5. publie ou met à jour un commentaire avec les labels proposés, leur niveau
    de confiance et une justification;
-6. applique éventuellement les labels selon le mode configuré.
+6. si l'intention `bug` est retenue, route le diff vers l'expert Gemini et
+   ajoute son verdict au même commentaire;
+7. applique éventuellement les labels selon le mode configuré.
 
 ## Stack
 
@@ -216,6 +218,10 @@ PUBLIC_BASE_URL=http://localhost:3000
 GROQ_API_KEY=remplacer-par-une-cle-groq-ou-laisser-vide
 GROQ_MODEL=llama-3.1-8b-instant
 
+# Expert spécialisé appelé après une classification "bug"
+GEMINI_REVIEW_API_KEY=remplacer-par-une-cle-gemini
+GEMINI_REVIEW_MODEL=gemini-2.5-flash
+
 # ============================================================
 # Comportement de l'application
 # suggest | auto-high | auto-all
@@ -244,6 +250,8 @@ Rôle des variables :
 | `PUBLIC_BASE_URL`       | Oui         | URL publique ou locale utilisée par l'interface          |
 | `GROQ_API_KEY`          | Non         | Fournisseur de repli si aucune configuration n'existe    |
 | `GROQ_MODEL`            | Non         | Modèle Groq de repli                                     |
+| `GEMINI_REVIEW_API_KEY` | Pour revue  | Authentifie l'expert Gemini des corrections de bugs      |
+| `GEMINI_REVIEW_MODEL`   | Non         | Modèle utilisé par l'expert bug                          |
 | `LABEL_MODE`            | Oui         | Contrôle l'application automatique des labels            |
 | `LOG_LEVEL`             | Non         | Définit le niveau de détail des journaux                 |
 | `NODE_ENV`              | Oui         | Sélectionne le comportement développement ou production |
