@@ -220,7 +220,7 @@ GROQ_MODEL=llama-3.1-8b-instant
 
 # Expert spécialisé appelé après une classification "bug"
 GEMINI_REVIEW_API_KEY=remplacer-par-une-cle-gemini
-GEMINI_REVIEW_MODEL=gemini-2.5-flash
+GEMINI_REVIEW_MODEL=gemini-3.5-flash-lite
 
 # ============================================================
 # Comportement de l'application
@@ -250,7 +250,7 @@ Rôle des variables :
 | `PUBLIC_BASE_URL`       | Oui         | URL publique ou locale utilisée par l'interface          |
 | `GROQ_API_KEY`          | Non         | Fournisseur de repli si aucune configuration n'existe    |
 | `GROQ_MODEL`            | Non         | Modèle Groq de repli                                     |
-| `GEMINI_REVIEW_API_KEY` | Pour revue  | Authentifie l'expert Gemini des corrections de bugs      |
+| `GEMINI_REVIEW_API_KEY` | Pour revue  | Clé dédiée facultative; sinon `GEMINI_API_KEY` est utilisée |
 | `GEMINI_REVIEW_MODEL`   | Non         | Modèle utilisé par l'expert bug                          |
 | `LABEL_MODE`            | Oui         | Contrôle l'application automatique des labels            |
 | `LOG_LEVEL`             | Non         | Définit le niveau de détail des journaux                 |

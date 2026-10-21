@@ -10,8 +10,11 @@ Configurer l'expert Gemini dans `.env` :
 
 ```env
 GEMINI_REVIEW_API_KEY=votre-cle
-GEMINI_REVIEW_MODEL=gemini-2.5-flash
+GEMINI_REVIEW_MODEL=gemini-3.5-flash-lite
 ```
+
+Si `.env` contient déjà `GEMINI_API_KEY`, il n'est pas nécessaire de définir
+`GEMINI_REVIEW_API_KEY`.
 
 Le dépôt GitHub utilisé pour la démonstration doit posséder un label `bug`.
 

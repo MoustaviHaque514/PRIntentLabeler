@@ -281,7 +281,7 @@ export async function handlePullRequestEvent(
         }
       } else {
         bugReviewFailure =
-          "GEMINI_REVIEW_API_KEY n'est pas configurée pour l'expert bug.";
+          "GEMINI_REVIEW_API_KEY ou GEMINI_API_KEY n'est pas configurée pour l'expert bug.";
       }
     }
 
