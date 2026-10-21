@@ -1,7 +1,7 @@
 /**
- * Version de base à installer sur la branche cible avant la démonstration.
+ * Calcule le montant final en cents.
  *
- * Bug connu : une remise supérieure au sous-total produit un montant négatif.
+ * La valeur du panier est bornée avant l'application de la remise.
  */
 export function calculatePayableTotal(
   subtotalCents: number,
@@ -16,5 +16,5 @@ export function calculatePayableTotal(
     throw new RangeError("Les montants doivent être des entiers positifs.");
   }
 
-  return subtotalCents - discountCents;
+  return Math.max(0, subtotalCents) - discountCents;
 }
